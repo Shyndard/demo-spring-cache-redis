@@ -20,8 +20,10 @@ You need
 
 # Test API
 ## Create Pizzas
-```curl -d 'reine' -H 'Content-Type: application/json' http://localhost:8080/api/pizzas```
-```curl -d 'calzone' -H 'Content-Type: application/json' http://localhost:8080/api/pizzas```
+```
+curl -d 'reine' -H 'Content-Type: application/json' http://localhost:8080/api/pizzas
+curl -d 'calzone' -H 'Content-Type: application/json' http://localhost:8080/api/pizzas
+```
 
 ## Get all pizzas
 ```curl http://localhost:8080/api/pizzas```
