@@ -1,6 +1,5 @@
 package com.shyndard.democacheapi.dao;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -15,11 +14,6 @@ import org.springframework.web.server.ResponseStatusException;
 public class PizzaDao {
 
     private final Map<UUID, Pizza> pizzas = new HashMap<>();
-
-    public Collection<Pizza> getAllPizza() {
-        sleep("getAll");
-        return pizzas.values();
-    }
 
     public Pizza getPizzaById(final UUID id) {
         sleep("getById");

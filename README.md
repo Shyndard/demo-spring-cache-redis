@@ -18,6 +18,12 @@ You need
 
 ```mvn clean package```
 
+## Start a redis with docker or postman
+
+> If you are using docker, replace 'podman' command with 'docker'
+
+```podman run -v redis/redis.conf:/usr/local/etc/redis --name demo-cache-redis redis:6.2.6```
+
 # Test API
 ## Create Pizzas
 ```

@@ -1,6 +1,5 @@
 package com.shyndard.democacheapi.controller;
 
-import java.util.Collection;
 import java.util.UUID;
 
 import com.shyndard.democacheapi.entity.Pizza;
@@ -26,14 +25,6 @@ public class PizzaController {
 
     public PizzaController(final PizzaService pizzaService) {
         this.pizzaService = pizzaService;
-    }
-
-    // Get all pizzas entries
-    @GetMapping
-    // Cache everything. Be carefull by caching a big list
-    @Cacheable(value = "pizza")
-    public Collection<Pizza> getAll() {
-        return pizzaService.getAllPizza();
     }
 
     // Get pizza entry by id

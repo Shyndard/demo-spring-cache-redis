@@ -1,6 +1,5 @@
 package com.shyndard.democacheapi.service;
 
-import java.util.Collection;
 import java.util.UUID;
 
 import com.shyndard.democacheapi.dao.PizzaDao;
@@ -15,10 +14,6 @@ public class PizzaService {
 
     public PizzaService(PizzaDao pizzaDao) {
         this.pizzaDao = pizzaDao;
-    }
-
-    public Collection<Pizza> getAllPizza() {
-        return pizzaDao.getAllPizza();
     }
 
     public Pizza getPizzaById(UUID id) {

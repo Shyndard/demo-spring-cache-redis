@@ -3,7 +3,7 @@ package com.shyndard.democacheapi.entity;
 import java.util.UUID;
 
 public class Pizza {
-
+    
     private UUID id;
     private String name;
 
