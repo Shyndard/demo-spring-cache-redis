@@ -30,6 +30,7 @@ public class PizzaController {
 
     // Get all pizzas entries
     @GetMapping
+    // Cache everything. Be carefull by caching a big list
     @Cacheable(value = "pizza")
     public Collection<Pizza> getAll() {
         return pizzaService.getAllPizza();
